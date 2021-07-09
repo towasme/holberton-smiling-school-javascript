@@ -1,232 +1,245 @@
-/* ********** Variables ********** */
-:root {
-    --font-size-small: 0.9rem;
-    --font-size-medium: 1rem;
-    --font-size-large: 2rem;
-    --font-size-xlarge: 5rem;
-    --holberton-red: #ff6565;
-    --purple-smile: #c271ff;
-    --text-color-white: #ffffff;
-    --blue-background-color: #071629;
-}
-
-body {
-    font-family: Source Sans Pro;
-    background-color: #071629;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-}
-
-.homepage-hero {
-    background-image: url("./images/pic_1.jpg");
-}
-
-.pricing-hero {
-    background-image: url("./images/pic_2.jpg");
-}
-
-.courses-hero {
-    background-image: url("./images/pic_3.jpg");
-}
-
-img.smile-school-logo {
-    height: 2rem;
-}
-
-#courses .courses,
-#pricing .pricing {
-    color: #c271ff !important;
-    text-decoration: underline !important;
-    text-decoration-color: #ffffff !important;
-    text-decoration-thickness: 3px !important;
-}
-
-.subtitles::after {
-    content: "SMILES GRIN LAUGH";
-    display: block;
-    font-size: var(--font-size-small);
-    word-spacing: 2.5rem;
-    text-align: center;
-}
-
-.fine-print-1::after {
-    content: "$1.20/month";
-    display: block;
-    font-size: var(--font-size-small);
-}
-
-.course-title {
-    font-family: Coiny;
-}
-
-button.btn {
-    background-color: var(--purple-smile);
-    border: none;
-    border-radius: 22px;
-    margin: 1.2rem auto;
-    opacity: 0.9;
-    filter: drop-shadow(2px 2px 20px rgba(0, 0, 0, 0.5));
-    font-size: var(--font-size-small);
-    padding: 0.5rem 1.0rem 0.5rem 1.0rem;
+@font-face {
+    font-family: 'holberton_school-icon';
+    src:  url('fonts/holberton_school-icon.eot?sq4eq4');
+    src:  url('fonts/holberton_school-icon.eot?sq4eq4#iefix') format('embedded-opentype'),
+      url('fonts/holberton_school-icon.ttf?sq4eq4') format('truetype'),
+      url('fonts/holberton_school-icon.woff?sq4eq4') format('woff'),
+      url('fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon') format('svg');
+    font-weight: normal;
     font-style: normal;
-    font-weight: 800;
-    text-align: center;
-}
+    font-display: block;
+  }
+  
+  [class^="holberton_school-icon-"], [class*=" holberton_school-icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'holberton_school-icon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /** Icons */
+  .holberton_school-icon-ic_facebook:before {
+    content: "\e908";
+  }
+  
+  .holberton_school-icon-ic_instagram:before {
+    content: "\e90a";
+  }
+  
+  .holberton_school-icon-ic_twitter:before {
+    content: "\e90f";
+  }
+  
+  .holberton_school-icon-check:before {
+    content: "\e905";
+  }
+  
+  /**Homepage*/
+  
+  body {
+      background-image: url("./images/pic_1.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  
+  .middle-part {
+      padding-top: 13%;
+  }
+  
+  .learn {
+      padding-top: 16%;
+  }
+  
+  div button {
+      background: #C271FF;
+      color: #FFF;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+      border-radius: 20px;
+      padding: 9px 20px;
+      border: none;
+  }
+  
+  .testimonials-section {
+      background: #C271FF;
+  }
+  
+  .popular-videos {
+      background: #FFF;
+  }
+  
+  .free-member {
+      background: #071629;
+  }
+  
+   .card-small {
+      width: 54%;
+      height: 64%;
+  }
+  
+  .latest-videos {
+      background: #FFF;
+  }
+  
+  /** Pricing page */
+  body.pricing {
+      background-image: url("./images/pic_2.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center center;
+  }
+  
+  /** Hero section */
+  .middle-part {
+      padding-top: 13%;
+  }
+  
+  .smile-off {
+      width: 4%;
+      height: 4%;
+  }
+      
+  .smile-logo {
+      width: 12%;
+  }
+  
+  .go-pro {
+      padding-top: 8%;
+  }
+  
+  .plan {
+      padding-top: 4%;
+      padding-bottom: 6%;
+  }
+  
+  .testimonials-section {
+      padding-bottom: 4%;
+      padding-top: 4%;
+  }
+  
+  .faq {
+      background-color: #FFF;
+      padding-top: 6%;
+      padding-bottom: 6%;
+  }
+  
+  .footer {
+      padding-top: 6%;
+      padding-bottom: 2%;
+  }
+  
+  .footer-copyright {
+      padding-top: 4%;
+  }
+  
+  /**Courses*/
+  
+  body.courses {
+      background-image: url("./images/pic_3.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center center;
+  }
+  
+  small.not-purple, u, p.not-purple {
+      color: #C271FF;
+  }
+  
+  .inputs-section {
+      background: #C271FF;
+  }
+  
+  .form-control select {
+      background: #FFF;
+      color: #C271FF;
+  }
+  
+  .list-results {
+      background: #FFF;
+  }
+  
+  /**Queries*/
+  
+  @media screen and(min-width:768px){
+      body.pricing {
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-attachment: fixed;
+      }
+      
+      body.homepage {
+          background-image: url("pic_1.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+      
+      div .middle-part h1{
+          padding-top: 108px;
+      }
+      
+      .smile-off {
+          width: 12%;
+          height: 12%;
+      }
+      
+      .smile-logo {
+          width: 23%;
+      }
+  }
+  
+  @media screen and(min-width:576px){
+      body.pricing {
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-attachment: fixed;
+      }
+      
+      body.homepage {
+          background-image: url("./images/pic_1.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+      
+      div .middle-part h1 {
+          font-size: 30px;
+      }
+      
+      .smile-off {
+          width: 12%;
+          height: 18%;
+      }
+      
+      .smile-logo {
+          width: 23%;
+      }
+  }
+  
+  /*Loader*/
+  .loader {
+    border: 10px solid #FFF;
+    border-top: 10px solid #FFF;
+    border-right: 10px solid #FFF;
+    border-bottom: 10px solid #FFF;
+    border-left: 10px solid #C271FF;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    margin: auto;
+    animation: load 2s linear infinite;
+    -webkit-animation: load 2s linear infinite;
+  }
 
-.purple-text {
-    color: var(--purple-smile);
-    font-weight: 900;
-}
-
-img.circle-thumb {
-    width: 9rem;
-}
-
-.carousel {
-    padding-left: 4rem;
-    height: 15rem;
-}
-
-.carousel-control-prev {
-    background-image: url("./images/arrow_white_left.png");
-    background-repeat: no-repeat;
-    background-size: 2rem;
-    margin: 2rem 1rem;
-}
-
-.carousel-control-next {
-    background-image: url("./images/arrow_white_right.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 2rem;
-    margin: 2rem 1rem;
-}
-
-img.thumbnail-1 {
-    width: 14rem;
-}
-
-.video-prev {
-    background-image: url("./images/arrow_black_left.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 3rem;
-    margin: 2rem -6rem;
-}
-
-.video-next {
-    background-image: url("./images/arrow_black_right.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 3rem;
-    margin: 2rem -8em;
-}
-
-img.small-img {
-    width: 3.5rem;
-    height: 3.5rem;
-}
-
-img.play-btn {
-    height: 3.5rem;
-    margin: 2.4rem 4.5rem;
-}
-
-img.smile-logo {
-    width: 3.5rem;
-}
-
-.checkmark {
-    fill: green;
-}
-
-footer {
-    position: absolute;
-}
-
-.holberton_school-icon-ic_facebook,
-.holberton_school-icon-ic_twitter,
-.holberton_school-icon-ic_instagram {
-    color: #ffffff;
-    height: 2rem;
-    font-size: 2rem;
-}
-
-#toggle-menu {
-    display: none;
-}
-
-@media (max-width: 576px) {
-    header {
-        background-position: 44% 50%;
-    }
-
-    .header-nav {
-        display: none;
-        width: 100%;
-        flex-direction: column;
-        text-align: center;
-        margin: 1rem;
-        font-weight: bold;
-        cursor: pointer;
-    }
-
-    .header-nav .nav-link {
-        width: 100%;
-        margin: 0.5rem auto;
-        line-height: 1;
-    }
-
-    #hamburger-btn {
-        cursor: pointer;
-        background: white;
-        height: 2px;
-        width: 0.8rem;
-        position: absolute;
-        left: 1rem;
-        top: 20px;
-        display: block;
-    }
-
-    #hamburger-btn::before {
-        content: "";
-        background: #ffffff;
-        height: 2px;
-        width: 20px;
-        position: relative;
-        top: -0.4rem;
-        display: block;
-        transition: all 0.2s ease;
-        cursor: pointer;
-    }
-
-    #hamburger-btn::after {
-        content: "";
-        background: #ffffff;
-        height: 2px;
-        width: 18px;
-        position: relative;
-        top: 0.3rem;
-        display: block;
-        transition: all 0.2s ease;
-    }
-
-    #toggle-menu:checked ~ .header-nav {
-        display: block;
-    }
-
-    #toggle-menu:checked ~ #hamburger-btn {
-        background: transparent;
-    }
-
-    #toggle-menu:checked ~ #hamburger-btn::before {
-        transform: rotate(45deg);
-        top: 0.19rem;
-    }
-
-    #toggle-menu:checked ~ #hamburger-btn::after {
-        width: 1.34rem;
-        transform: rotate(-45deg);
-        top: 1px;
-    }
-}
+  @keyframes load {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+  }
